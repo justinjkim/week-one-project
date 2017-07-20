@@ -3,3 +3,23 @@ body {
   font-family: 'Merriweather', serif;
   font-family: 'Roboto', sans-serif;
 }
+
+div.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  color: rgb(42,48,38);
+
+}
