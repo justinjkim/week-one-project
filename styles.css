@@ -290,3 +290,100 @@ thead, tr > td:nth-child(2) {
 tbody tr:nth-child(odd) {
   background-color: rgb(243, 234, 219);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************************
+***************************************
+NEWSLETTER
+***************************************
+***************************************/
+body#newsletter-background {
+  background-image: url('images/background-2.jpg');
+}
+
+main#newsletter {
+  flex-basis: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+
+main#newsletter div {
+  background-color: #fff;
+  padding: 30px;
+  margin: 50px auto;
+}
+
+main#newsletter div h2 {
+  text-align: center;
+}
+
+main#newsletter div h3 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="email"] {
+  padding: 5px;
+  border: none;
+  border-bottom: 2px solid #968772;
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+input[type="email"]:focus {
+  border: none;
+  border-bottom: #967343;
+}
+
+input[type="text"] {
+  padding: 5px;
+  border: none;
+  border-bottom: 2px solid #968772;
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+input[type="text"]:focus {
+  border: none;
+  border-bottom: #967343;
+}
+
+input[type="submit"] {
+  background-color: #968772;
+  border: none;
+  color: #F2F1E8;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 10px 20px;
+  width: 100px;
+
+}
+
+input[type="submit"]:hover {
+  background-color: #F2F1E8;
+  color: #968772;
+}
