@@ -1,7 +1,7 @@
 /* Google font */
 body {
-  font-family: 'Merriweather', serif;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Merriweather', 'Roboto', serif;
+  color: #131511;
 }
 
 div.wrapper {
@@ -9,17 +9,79 @@ div.wrapper {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
+} /* this will affect <header> */
+
+header {
+    flex-basis: 100%;
+
 }
 
-nav ul {
+img#logo {
+    position: absolute;
+    height: 50px;
+    align-items: center;
+}
+
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-nav ul li a {
-  color: rgb(42,48,38);
+ul li {
+  padding: 20px;
+}
 
+ul li a {
+  color: rgb(42,48,38);
+  text-transform: uppercase;
+  padding: 20px;
+  font-family: Roboto;
+}
+
+
+
+
+
+
+
+/*******************
+MAIN BODY STYLING
+*******************/
+main {
+  background-color: #F2F1E8;
+  flex-basis: 100%; /* flex item for .wrapper */
+  display: flex;
+  flex-direction: column;
+
+}
+
+section.title {
+  text-align: center;
+}
+
+section.gallery {
+  flex-width: 100%;
+  display: flex; /* flex item for main */
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+
+
+
+
+/*******************
+FOOTER
+*******************/
+footer {
+  flex-basis: 100%;
+  background-color: rgb(42, 48, 38);
+  color: #fff;
 }
