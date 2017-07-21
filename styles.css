@@ -52,17 +52,23 @@ ul li a {
   text-transform: uppercase;
   padding: 20px;
   font-family: Roboto;
-  transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 ul li a:hover {
   background-color: #CD5D67;
+  color: white;
 }
 
 ul li a:active {
-  color: #2B2F26;
-  background-color: blue;
+  color: #968772;
 }
+
+ul li a#active {
+  color: #968772;
+}
+
+
 
 
 
@@ -98,13 +104,6 @@ section.gallery {
   flex-direction: column;
 }
 
-/*section.gallery div.first_row {
-
-}
-
-section.gallery div.second_row {
-
-}*/
 
 section.gallery div {
   background-size: cover;
@@ -119,6 +118,11 @@ section.gallery div p {
   background-color: rgb(42,48, 38);
   font-weight: 100;
   padding: 15px;
+  transition: background-color 0.4s ease;
+}
+
+section.gallery div p:hover {
+  background-color: #CD5D67;
 }
 
 div#endless_possibilities {
@@ -155,6 +159,7 @@ div#sippin_sunshine {
   background-image: url('images/product-7.jpg');
   flex-grow: 1;
 }
+
 
 
 
