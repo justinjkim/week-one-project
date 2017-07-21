@@ -68,7 +68,7 @@ section.title {
 section.gallery {
   flex-width: 100%;
   display: flex; /* flex item for main */
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
 
 }
@@ -78,7 +78,7 @@ section.gallery div {
   min-height: 200px;
   display: flex;
   align-items: flex-end;
-  justify-content: flex-start;
+  margin: 5px 10px;
 }
 
 section.gallery div p {
@@ -90,7 +90,7 @@ section.gallery div p {
 
 div#endless_possibilities {
   background-image: url('images/product-1.jpg');
-  flex-grow: 3;
+  flex-grow: 1;
 }
 
 div#sets {
