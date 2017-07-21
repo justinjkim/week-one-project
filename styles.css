@@ -8,6 +8,7 @@ HOME PAGE
 body {
   font-family: 'Merriweather', 'Roboto', serif;
   color: #131511;
+  background-color: #F2F1E8;
 }
 
 div.wrapper {
@@ -78,8 +79,7 @@ ul li a#active {
 /*******************
 MAIN BODY STYLING
 *******************/
-main {
-  background-color: #F2F1E8;
+main#homepage {
   flex-basis: 100%; /* flex item for .wrapper */
   display: flex;
   flex-direction: column;
@@ -197,12 +197,12 @@ footer {
 ABOUT US
 ***************************************
 ***************************************/
-main#about_us {
+div.wrapper main#about_us {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 90%;
-  margin: 0 auto;
+  flex-basis: 90%;
   line-height: 200%;
 }
 
