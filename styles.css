@@ -1,3 +1,9 @@
+/**********************
+***********************
+HOME PAGE
+***********************
+**********************/
+
 /* Google font */
 body {
   font-family: 'Merriweather', 'Roboto', serif;
@@ -67,10 +73,6 @@ ul li a:active {
 ul li a#active {
   color: #968772;
 }
-
-
-
-
 
 
 /*******************
@@ -159,8 +161,6 @@ div#sippin_sunshine {
   background-image: url('images/product-7.jpg');
   flex-grow: 1;
 }
-
-
 
 
 
