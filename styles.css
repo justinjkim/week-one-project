@@ -197,13 +197,37 @@ footer {
 ABOUT US
 ***************************************
 ***************************************/
+.parallax {
+  background-image: url('images/background-3.jpg');
+  height: 250px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.parallax h1 {
+  text-align: center;
+  font-size: 3em;
+  font-weight: 400;
+  color: white;
+  align-self: center;
+
+}
+
 div.wrapper main#about_us {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 80%;
+  width: 75%;
   line-height: 200%;
   margin-top: 80px;
+}
+
+#community, #history, .parallax, #facilities, #monthly_plans {
+  margin-bottom: 30px;
 }
 
 section#community h1 {
@@ -218,7 +242,7 @@ section h2 {
 }
 
 img#intro_pic {
-  width: 150px;
+  width: 200px;
   height: auto;
   float: left;
   padding-right: 20px;
@@ -247,4 +271,22 @@ section#facilities aside {
 
 aside img {
   width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 50px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  padding: 5px 10px;
+}
+
+thead, tr > td:nth-child(2) {
+  text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgb(243, 234, 219);
 }
