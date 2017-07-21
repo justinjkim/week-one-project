@@ -201,9 +201,20 @@ div.wrapper main#about_us {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 90%;
-  flex-basis: 90%;
+  width: 80%;
   line-height: 200%;
+  margin-top: 80px;
+}
+
+section#community h1 {
+  text-align: center;
+  font-size: 3em;
+  font-weight: 400;
+  margin-bottom: 80px;
+}
+
+section h2 {
+  font-weight: 200;
 }
 
 img#intro_pic {
@@ -217,4 +228,23 @@ blockquote.quote {
   font-style: italic;
   border-left: 2px solid #ddd;
   padding: 10px 20px;
+}
+
+section#facilities {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+section#facilities div {
+  flex-basis: 70%;
+}
+
+section#facilities aside {
+  flex-basis: 20%;
+  font-size: 80%;
+}
+
+aside img {
+  width: 100%;
 }
