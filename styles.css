@@ -69,22 +69,28 @@ section.gallery {
   flex-width: 100%;
   display: flex; /* flex item for main */
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 
 }
 
 section.gallery div {
   background-size: cover;
+  min-height: 200px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
 }
 
 section.gallery div p {
   color: #fff;
   background-color: rgb(42,48, 38);
   font-weight: 100;
+  padding: 15px;
 }
 
 div#endless_possibilities {
   background-image: url('images/product-1.jpg');
+  flex-grow: 3;
 }
 
 div#sets {
@@ -105,6 +111,7 @@ div#jars_containers {
 
 div#wasabi_saki {
   background-image: url('images/product-6.jpg');
+  flex-grow: 2;
 }
 
 div#sippin_sunshine {
