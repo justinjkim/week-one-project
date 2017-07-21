@@ -8,20 +8,30 @@ div.wrapper {
   width: 100%;
   margin: 0 auto;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
-} /* this will affect <header> */
+  justify-content: center;
+}
 
+
+
+/******************
+HEADER
+******************/
 header {
-    flex-basis: 100%;
-
+  flex-basis: 100%;
+  box-shadow: 2px 2px 2px #aaa;
+  margin-bottom: 2px;
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
 }
 
 img#logo {
-    position: absolute;
-    height: 50px;
-    align-items: center;
+  position: absolute;
+  height: 50px;
+  align-items: center;
 }
 
 ul {
@@ -38,14 +48,21 @@ ul li {
 }
 
 ul li a {
-  color: rgb(42,48,38);
+  color: #2B2F26;
   text-transform: uppercase;
   padding: 20px;
   font-family: Roboto;
+  transition: background-color 0.4s ease;
 }
 
+ul li a:hover {
+  background-color: #CD5D67;
+}
 
-
+ul li a:active {
+  color: #2B2F26;
+  background-color: blue;
+}
 
 
 
@@ -58,24 +75,40 @@ main {
   flex-basis: 100%; /* flex item for .wrapper */
   display: flex;
   flex-direction: column;
-
+  margin-top: 50px;
 }
 
 section.title {
   text-align: center;
 }
 
+section.title h1 {
+  font-size: 3em;
+  font-weight: 400;
+  margin-bottom: -10px;
+}
+
+section.title h2 {
+  font-weight: 200;
+}
+
 section.gallery {
   flex-width: 100%;
   display: flex; /* flex item for main */
   flex-direction: column;
-  justify-content: space-between;
+}
+
+/*section.gallery div.first_row {
 
 }
 
+section.gallery div.second_row {
+
+}*/
+
 section.gallery div {
   background-size: cover;
-  min-height: 200px;
+  min-height: 300px;
   display: flex;
   align-items: flex-end;
   margin: 5px 10px;
@@ -90,23 +123,27 @@ section.gallery div p {
 
 div#endless_possibilities {
   background-image: url('images/product-1.jpg');
-  flex-grow: 1;
+  flex-basis: 50%;
 }
 
 div#sets {
   background-image: url('images/product-2.jpg');
+  flex-basis: 25%;
 }
 
 div#textures {
   background-image: url('images/product-3.jpg');
+  flex-basis: 25%;
 }
 
 div#tea_time {
   background-image: url('images/product-4.jpg');
+  flex-grow: 1;
 }
 
 div#jars_containers {
   background-image: url('images/product-5.jpg');
+  flex-grow: 1;
 }
 
 div#wasabi_saki {
@@ -116,6 +153,7 @@ div#wasabi_saki {
 
 div#sippin_sunshine {
   background-image: url('images/product-7.jpg');
+  flex-grow: 1;
 }
 
 
@@ -129,4 +167,6 @@ footer {
   flex-basis: 100%;
   background-color: rgb(42, 48, 38);
   color: #fff;
+  font-weight: 100;
+  padding: 20px;
 }
