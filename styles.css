@@ -314,6 +314,8 @@ NEWSLETTER
 ***************************************/
 body#newsletter-background {
   background-image: url('images/background-2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 main#newsletter {
@@ -333,10 +335,12 @@ main#newsletter div {
 
 main#newsletter div h2 {
   text-align: center;
+  font-weight: 200;
 }
 
 main#newsletter div h3 {
   text-align: center;
+  font-weight: 200;
 }
 
 form {
@@ -352,11 +356,14 @@ input[type="email"] {
   margin-bottom: 20px;
   width: 100%;
   font-size: 1.2em;
+  -webkit-transition: 0.5s;
+  transition: border-bottom 0.5s ease;
+  outline: none;
 }
 
 input[type="email"]:focus {
-  border: none;
-  border-bottom: #967343;
+  /*border-bottom: #967343;*/
+  border-bottom: 2px solid #967343;
 }
 
 input[type="text"] {
@@ -366,11 +373,14 @@ input[type="text"] {
   margin-bottom: 20px;
   width: 100%;
   font-size: 1.2em;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
 }
 
 input[type="text"]:focus {
-  border: none;
-  border-bottom: #967343;
+  /*border: none;*/
+  border-bottom: 2px solid #967343;
 }
 
 input[type="submit"] {
@@ -378,9 +388,10 @@ input[type="submit"] {
   border: none;
   color: #F2F1E8;
   transition: background-color 0.3s ease, color 0.3s ease;
-  padding: 10px 20px;
+  padding: 20px 15px;
   width: 100px;
-
+  font-size: 1.2em;
+  text-align: center;
 }
 
 input[type="submit"]:hover {
